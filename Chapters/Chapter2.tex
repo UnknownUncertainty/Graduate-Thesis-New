@@ -1,0 +1,273 @@
+\chapter{Ayar Değişmezliği}
+\lhead{\emph{Kuantum Mekaniğinde Ayar Değişmezliği}} 
+\section{Kuantum Mekaniğinde Ayar Değişmezliği}
+The gauge principle and the concept of gauge invariance are already
+present in Quantum Mechanics of a particle in the presence of an elec-
+tromagnetic field . Let us start from the classical Hamiltonian that
+gives rise to the Lorentz force ($\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}$)
+\begin{equation} \label{qm1}
+\mathcal{H} = \frac{1}{2m} (\vec{p} - q\vec{A})^2 + q\phi,
+\end{equation}	
+where the electric and magnetic fields can be described in terms of the
+potentials $A^\mu = (\phi,\vec{A}), $
+%$$\vec{E} = - \vec{\nabla}\phi - \frac{\partial^2 u}{\partial x^2}} $$
+\begin{equation} \label{qm2}
+\vec{E} = -\vec{\nabla}\phi -\frac{\partial \vec{A}}{\partial t}, \qquad \vec{B} = \vec{\nabla} \times \vec{A}
+\end{equation}  
+These fields remain exactly the same when we make the gauge transformation (G) in the potentials:
+\begin{equation} \label{qm3}
+\to \phi^{'} = \phi - \frac{\partial \chi}{\partial t}, \qquad \vec{A} \to \vec{A^{'}} = \vec{A} + \vec{\nabla}\chi
+\end{equation}  
+When we quantize the Hamiltonian (\ref{qm1}) by applying the usual prescription $p \to -i\nabla$, we get Schrödinger equation for a particle in an electromagnetic field,
+\begin{equation} \label{qm4}
+\left[ \frac{1}{2m}\left(-i\vec{\nabla} - q\vec{A} \right)^2  +q\phi \right] \psi(x,t) = i\frac{\partial\psi(x,t)}{\partial t}
+\end{equation}  
+which can be written in a compact form as 
+\begin{equation} \label{qm5}
+\frac{1}{2m}\big(-i\vec{D}\big)^2\psi = iD_0\psi
+\end{equation}
+The equation (\ref{qm5}) is equivalent to make the substitution
+\begin{equation} \label{qm6}
+\vec{\nabla} \to \vec{D} = \vec{\nabla} - iq\vec{A} ,\qquad \frac{\partial}{\partial t} \to D_0 = \frac{\partial}{\partial t} + iq\phi
+\end{equation}
+in the free Schrödinger equation.
+
+If we make the gauge transformation, $(\phi ,\vec{A}) \xrightarrow{G} (\phi^{'},\vec{A^{'}})$ , given by (\ref{qm3}), does the new field $\psi^{'}$ which is solution of 
+$$\frac{1}{2m}\big(-i\vec{D}\big)^2\psi^{'} = iD_0\psi^{'}$$
+describe the new physics?
+	The answer to this question is no. However, we can recover the invariance of our thery by making, at the same time, the phase transformation in the matter field 
+\begin{equation} \label{qm7}
+\psi^{'} = e^{iq\chi}\psi
+\end{equation}
+with the same function $\chi = \chi(x,t)$ used in the transformation of electromagnetic fields(\ref{qm3}). The derivative of $\psi^{'}$ transforms as,
+\begin{equation}\label{qm8}
+\begin{aligned}
+\vec{D^{'}}\psi^{'} &= \left[ \vec{\nabla} - iq(\vec{A} + \vec{\nabla}\chi) \right] e^{iq\chi}\psi \\
+\\
+& = e^{iq\chi} (\vec{\nabla}\psi) + iq(\vec{\nabla}\chi)\psi - iq\vec{A} e^{iq\chi}\psi - iq(\vec{\nabla}\chi) e^{iq\chi}\psi \
+\\
+\\
+& = e^{iq\chi}\vec{D}\psi
+\end{aligned}
+\end{equation}
+and in the same way, we have for $D_0$,
+\begin{equation} \label{qm9}
+D_{0}^{'} \psi^{'} = e^{i q \chi} D_{0} \psi
+\end{equation}
+
+We should mention that now the field $\psi$ (\ref{qm7}) and its derivatives $\vec{D}\psi$ (\ref{qm8}),and $D_0\psi$ (\ref{qm9}), all transform exactly in the same way: they are all multiplied by same phase factor.
+
+Therefore, the Schrödinger equation (\ref{qm5}) for $\psi^{'}$ becomes 
+\begin{equation} \label{qm10}
+\begin{split}
+\frac{1}{2m}\big(-i\vec{D}\big)^2\psi^{'} & = \frac{1}{2m}\big(-i\vec{D}\big)^2\psi^{'} = iD^{'}_0\psi^{'} \\
+ & = \frac{1}{2m}\big(-i\vec{D^{'}}\big)\big(-i\vec{D^{'}}\psi^{'}\big)\\
+ & = \frac{1}{2m}\big(-i\vec{D^{'}}\big)\left[-ie^{iq\chi} \vec{D}\psi\right]\\
+ & = e^{iq\chi}\frac{1}{2m}\big(-i\vec{D}\big)^{2}\psi\\
+ & = e^{iq\chi}\big(iD_0\big)\psi\\
+\end{split}
+\end{equation}
+and now both $\psi$ and $\psi^{'}$ describe the same physics, since $ \vert\psi\vert^2 = \vert\psi^{'}\vert^2$. In order to get the invariance for all observables, we should assure that the following substitution is made:
+$$\vec{\nabla} \to \vec{D}\,, \qquad \frac{\partial}{\partial t} \to D_0 $$
+For instance, the current
+$$\vec{J}\quad \alpha\quad \psi^{*}\big(\vec{\nabla}\psi\big) - \big(\vec{\nabla}\psi\big)^{*}\psi \,,$$
+becomes also gauge invariant with this substitution since
+\begin{equation} \label{qm11}
+\psi^{*\,'} \left( \vec{D}^{'}\psi^{'}  \right) = \psi^{*} e^{-iq\chi}\, e^{iq\chi} \left(\vec{D} \psi \right) = \psi^{*} \left(\vec{D} \psi \right) .
+\end{equation}
+
+\lhead{\emph{U(1) Ayar Değişmezliği}} 
+\section{U(1) Ayar Değişmezliği}
+Bu bölümde Abelyan U(1) ayar dönüşümü gösterilmektedir. Higgs mekanizmasını açıklamak için ve ayar dönüşümlerinin nasıl kullanıldığını göremek için iyi bir başlangıç oluşturmaktadır. İlk olarak serbest Dirac Lagranjiyeni ile başlayarak yerel ayar ve global ayar dönüşümlerinin bu alan üzerinde etkilerinin neler olduğunu görelim. Bir $m$ kütleli spinör (spin$-\frac{1}{2}$) alanı için Dirac Lagranjiyeni
+\begin{equation} \label{u1}
+\mathcal{L} = \underbrace{ i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi}_{\textrm{Spinör serbest alanı}} - \underbrace{mc{^2}\overline{\psi}\psi}_{\textrm{Potansiyel enerji terimi}}
+\end{equation}
+denklemi ile verilir. Bu Lagranjiyen için global ayar ve yerel ayar dönüşümleri
+\begin{equation} \label{u2}
+	\begin{aligned}
+\textrm{Global ayar dönüşümü : }\psi^{'} \to e^{i \frac{q}{\hbar c}\alpha}\,\psi\;\qquad\;(\textrm{  burada }\alpha\; \textrm{gerçek bir sabittir.})\\ \\
+\textrm{Yerel ayar dönüşümü  : } \psi^{'} \to e^{i \frac{q}{\hbar c} \alpha(x)}\,\psi\;\; (\alpha(x) \; x^{\mu} \textrm{'e bağlı bir fonksiyondur.})
+	\end{aligned}
+\end{equation}
+olarak tanımlanabilir. İlk olarak global ayar dönüşümünü uyguladığımızda üstel terimdeki ifadeler birer sabit olduğundan denklem \eqref{u1}'deki Lagranjiyende yerine koyduğumuzda,  kinetik enerji ifadesindeki türev işlemcilerinden etkilenmeyecektir. Dolayısıyla global ayar dönüşümleri $(\overline{\psi^{'}} = e^{-i \frac{q}{\hbar c} \alpha}\overline{\psi})$ altında Lagranjiyen değişmez olarak kalmaktadır. Yerel ayar dönüşümünü Lagranjiyene uyguladığımızda üstel terim $x^{\mu}$'nün fonksiyonu olduğundan türev ifadesinden etkilenir ve kinetik enerji terimi
+\begin{equation*}
+\begin{aligned}
+i\hbar c \left[ e^{-i \frac{q}{\hbar c} \alpha(x)} \overline{\psi} \,\gamma^{\mu}\,e^{i \frac{q}{\hbar c} \alpha(x)} \left\lbrace  i\frac{q}{\hbar c} \, ( \partial_{\mu}\alpha(x) )\psi + ( \partial_{\mu} \psi) \right\rbrace \right]\\
+\\
+\end{aligned}
+\end{equation*}
+\begin{equation} \label{u3}
+i\hbar c \overline{\psi}\,\gamma^{\mu}\partial_{\mu} \psi - \underbrace{q\,\overline{\psi}\,\gamma^{\mu}\, ( \partial_{\mu}\alpha(x) )\psi}_{\textrm{Ek terim}}
+\end{equation}
+olarak dönüşür. Bunun sonucu olarak eğer Lagranjiyeni yerel ayar dönüşümleri altında değişmez bırakmak istiyorsak ortaya çıkan fazlalık terimden kurtulmamız gerekir. Bunu sağlamak için problemimize uygun yeni bir ayar ve kovaryant türev olarak adlandırılan 
+\begin{equation} \label{uu:4}
+\partial_{u} \to \mathcal{D}_{\mu} = \partial_{\mu} - i \frac{q}{\hbar c} A_{\mu} \qquad \textrm{ve} \qquad A^{'}_{\mu} \to A_{\mu} + \partial_{\mu} \alpha(x)
+\end{equation}
+dönüşüm ifadelerini kullanmak gereklidir. Öncelikle daha önce kullanılan türev işlemcisi yerine kovaryant türev ifadesini denklem \eqref{u1}'de yerine koyarsak ve yerel ayar dönüşümü uygularsak
+\begin{equation*}
+\begin{aligned}
+&\mathcal{L}_{N} = i\hbar c\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu} \psi  - mc{^2}\overline{\psi}\psi \\
+\\
+& \mathcal{L}_{N}= i\hbar c\overline{\psi}\gamma^{\mu}\left[ \partial_{\mu} - i \frac{q}{\hbar c} A_{\mu}\right] \psi  - mc{^2}\overline{\psi}\psi\\
+\\ 
+& \mathcal{L}_{N}^{'} =  i\hbar c\, e^{-i\frac{q}{\hbar c}\alpha(x)} \overline{\psi} \gamma^{\mu} \left[ e^{i \frac{q}{\hbar c} \alpha(x)}\left\lbrace 
+\frac{i\,q}{\hbar c}( \partial_{\mu}\alpha(x))\psi +  ( \partial_{\mu} \psi) - \frac{i\,q}{\hbar c} A_{\mu}\psi 
+ - \frac{i\,q}{\hbar c}( \partial_{\mu}\alpha(x))\psi \right\rbrace \right] \\
+\\
+&\quad\;\; - \bigg[ m c^{2}e^{-i\frac{q}{\hbar c}\alpha(x)} \overline{\psi}\, e^{i \frac{q}{\hbar c} \alpha(x)} \psi  \bigg] \\
+\\
+\end{aligned}
+\end{equation*}
+\begin{equation} \label{u5}
+\mathcal{L}_{N}^{'} = i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi - mc{^2}\overline{\psi}\psi + \underbrace{ q \overline{\psi}\,\gamma^{\mu} A_{\mu}\,\psi }_{\textrm{Etkileşim terimi}}
+\end{equation}
+olarak elde edilir. Denklem \eqref{u5}'de yerel ayar dönüşümü yaparak ek terimden kurtulmanın sonucu olarak yeni bir etkileşim terimi elde edildi.  Denklem \eqref{u5}'deki etkileşim teriminde $A_{\mu}$ vektör alanı bulunması nedeniyle bu alana ait serbest Lagranjiyeni de eklemek gereklidir. Vektör alanın serbest Lagranjiyeni Proce Lagranjiyeni 
+\begin{equation} \label{u6}
+\mathcal{L_{P}} = -\frac{1}{4}\,F^{\mu\nu}\,F_{\mu\nu} + \frac{1}{2}\left(\frac{m_{A}\,c}{\hbar}\right)^{2}A^{\nu}A_{\nu}
+\end{equation}
+ile verilir. Lagranjiyene böyle bir terimin eklenmesinin sonucu olarak yerel faz dönüşümünü bu ifade içinde uygulamamız gereklidir. Dolayısıyla 
+\begin{equation*}
+F^{\mu\nu}\equiv (\partial^{\mu}\,A^{\nu} - \partial^{\nu}\,A^{u} ) \Rightarrow F_{\mu\nu}\equiv (\partial_{\mu}\,A_{\nu}\,- \, \partial_{\nu}\,A_{u} )
+\end{equation*}
+olarak yerel faz dönüşümü altında değişmez kalmaktadır. Fakat $A^{\nu}A_{\nu}$ terimi yerel faz dönüşümü altında değişmez kalmadığından $m_{A}$ ile belirtilen vektör parçacığın kütle ifadesi olarak $m_{A} = 0$ almamız gerekir. Bu durumda bize kütlesiz bir vektör alanını belirtir. Sonuç olarak Lagranjiyen ifademiz
+\begin{equation} \label{u7}
+\mathcal{L}_{QED} =  i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi -\underbrace{\frac{1}{4}\,F^{\mu\nu}\,F_{\mu\nu}}_{A^{\mu} \textrm{ vektör serbest alanı}} - mc^{2}\overline{\psi}\psi  + \underbrace{ q \overline{\psi}\,\gamma^{\mu} \,\psi \,A_{\mu}}_{\textrm{Etkileşim terimi}}
+\end{equation}
+olmaktadır. Bu Lagranjiyen Dirac alanı ile ifade edilen elektronlar ve pozitronların fotonlar ile etkileşim kurduğunu söyleyen kuantum elektrodinamiği (KED) Lagranjiyenidir. Denklem \eqref{uu:7}'deki etkileşim terimi içerisindeki $J^{\mu} = q\overline{\psi}\gamma^{\mu}\psi$ serbest Dirac alanı için Noether akımını belirtmektedir. Dolayısıyla bütün elektrodinamik ifadeleri Lagranjiyenden elde edilebilir. Ayar dönüşümü ifadesini
+$$
+\psi^{'} \to U \psi\qquad U = e^{i\alpha(x)} \qquad U^{\dag}U = 1 
+$$
+şeklinde gösterebiliriz. Bunun anlamı $U$ olarak belirtilen ifade de faz dönüşümü $\psi$'nin $1 \times 1$'lik bir matrisle çapımı şeklindedir dolayısıyla bu biçimdeki matrislerin tümü $U(1)$ grubunu oluşturmaktadır. Bu türden dönüşümler $U(1)$ ayar dönüşümü olarak adlandırılmaktadır. Ayrıca $U$ ifadesi sıra değiştirebilir olduğundan Abelyan ayar dönüşümü olarak da nitelendirilir.
+%_{\textrm{Spinör serbest alanı}}
+%_{\textrm{Potansiyel enerji terimi}}
+\lhead{\emph{Yang-Mills Kuramı SU(2) Ayar Değişmezliği}} 
+\section{Yang-Mills Kuramı(SU(2) Ayar Değişmezliği)}
+Heisenberg tarafından 1932 yılında proton ve nötronun tek bir nükleonun farklı iki durumu olarak ele alınabileceğini söylemiştir. Protonun sahip olduğu elektrik yükünü ortadan kaldırdığımızda proton ve nötronun aynı güçlü kuvveti hissedeceğini belirtmiştir. Bu durumda proton ve nötron 
+\begin{equation} \label{ym1}
+\psi \equiv \left(\begin{array}{c}
+\psi_{p} \\ 
+\psi_{n}
+\end{array}\right)
+\end{equation}
+olarak ifade edilmektedir. Yang-Mills kuramının ortaya koyulma nedenlerinden biri ise Heisenberg'in tasvir ettiği türden bir proton ve nötron sistemidir. Başlangıç yapabilmek için kuram, eşit kütleli iki  $\frac{1}{2}$ spinli parçacığı ayrı ayrı kendi serbest Dirac alanına sahip $\psi_{1}\,\textrm{ve}\,\psi_{2}$ olarak ifade etmektedir. Bu resmi canlandırmaya
+\begin{equation} \label{ym2}
+\mathcal{L} = \big[i\hbar c\overline{\psi_{1}}\gamma^{\mu}\partial_{\mu} \psi_{1} -m_{1}c^{2}\,\overline{\psi_{1}}\psi_{1}\big] +  \big[i\hbar c\overline{\psi_{2}}\gamma^{\mu}\partial_{\mu} \psi_{2} -m_{2}c^{2}\,\overline{\psi_{2}}\psi_{2}\big]
+\end{equation}
+ifadesi ile başlayabiliriz. Buradaki $\psi_{1}\, \textrm{ve}\, \psi_{2}$'yi iki bileşenli bir sütün matris olarak ele alırsak
+\begin{equation} \label{ym3}
+\psi = \left(\begin{array}{c}
+\psi_{1} \\ 
+\psi_{1} 
+\end{array} \right)
+\qquad\textrm{ve}\qquad
+\overline{\psi} = 
+\left(\begin{array}{cc}
+\overline{\psi_{1}} & \overline{\psi_{2}}
+\end{array}\right) 
+\end{equation}  
+olarak yazılabilir. M kütle terimi olmak üzere $2 \times 2$ matris şeklinde
+\begin{equation} \label{ym4}
+M = \left(\begin{array}{cc}
+m_{1} & 0 \\ 
+0     & m_{2}
+\end{array} \right)
+\end{equation}
+yazılır. Böylece denklem \eqref{ym2} 
+\begin{equation} \label{ym5}
+\mathcal{L} = i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi - M\,c^{2}\,\overline{\psi}\,\psi
+\end{equation}
+haline dönüşür. Eşit kütleli iki parçacığın öne sürüldüğü model de  kütle ifadelerimizi $m = m_{1}$, $m = m_{2}$ ve $m = M$ olarak yazarsak
+\begin{equation} \label{ym6}
+\mathcal{L} = i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi - m\,c^{2}\,\overline{\psi}\,\psi
+\end{equation} 
+elde edilir. Daha önceki bölümde yaptığımız gibi global ve yerel faz dönüşümleri altında bu Lagranjiyeni incelemek için
+\begin{equation} \label{ym7}
+\psi \to U\psi \qquad \overline{\psi} \to \overline{\psi}U^{\dag}\qquad \textbf{ve} \qquad U^{\dag}U = 1
+\end{equation}
+ifadelerini belirtmek gerekir. Fakat bu sefer iki elemanlı bir vektörü incelediğimizden dolayı global ve faz dönüşümü ifadeleri
+\begin{equation*}  
+\begin{aligned}
+&\textrm{Global faz dönüşümü : }\psi^{'} \to e^{- \frac{i\tau \cdot \lambda}{\hbar\, c} }\psi \qquad \textrm{(burada } \lambda \textrm{ gerçek bir sabittir.)}   \\
+\\
+&\textrm{Yerel faz dönşümü : } \psi^{'} \to e^{-\frac{i\tau \cdot \lambda(x)}{\hbar\, c}}\psi \quad (\textrm{burada }\lambda(x) \,\, x^{\mu}\textrm{'nün fonksiyonudur.}) \\
+\\
+\end{aligned}
+\end{equation*}
+olarak kullanılır. Üstel fonksiyondaki  $\tau$ ifadesi $\tau_{1}\,,\tau_{2}\,,\tau_{3}$ Pauli spin matrisleridir. Bu türden dönüşümler SU(2) dönüşümleri olarak adlandırılır. Denklem \eqref{ym5}'deki Lagranjiyen ifademiz global faz dönüşümleri altında değişmez olmasına rağmen
+\begin{equation} \label{ym8}
+S \equiv e^{-\frac{i\tau \cdot \lambda(x)}{\hbar\, c}}
+\end{equation}
+olmak üzere türev ifadesi
+\begin{equation} \label{ym9}
+\partial_{\mu} \to S\partial_{\mu}\psi + (\partial_{\mu}S)\psi
+\end{equation}
+olarak etkilendiğinden ilave terimden dolayı yerel faz dönüşümü altında değişmez değildir. Dolayısıyla önceki bölümde yaptığımız gibi Lagranjiyen ifademizi yerel faz dönüşümü altında değişmez bırakmamız gerekiyor. Bunu daha kolay bir şekilde sağlamak için kovaryant türev ifadesini SU(2) yerel faz dönüşümü için olanı
+\begin{equation} \label{ym10}
+\mathcal{D}_{\mu} \equiv \partial_{\mu} + i\frac{q}{\hbar c}\, \boldsymbol{\tau} \cdot \mathbf{A}_{\mu}
+\end{equation}
+şeklinde tanımlanmaktadır. Kovaryant türev ifadesi artık üç adet $\mathbf{A}_{\mu}$ alanına sahiptir. Dolayısıyla bu vektör alanlarının da yerel faz dönüşümleri
+\begin{equation} \label{ym11}
+\boldsymbol{\tau}\cdot\mathbf{A}^{'}_{\mu} = S(\boldsymbol{\tau}\cdot\mathbf{A}_{\mu})S^{-1} + i\left(\frac{\hbar c}{q}\right)(\partial_{\mu}S)S^{-1}
+\end{equation}
+eşitliği ile gösterilmektedir. $S$ ile $S^{-1}$ bir araya getirilemediğinden amaçlarımız doğrultusunda çok küçük $|\lambda(x)|$ değerleri için $S$ ve $S^{-1}$'nin açılımlarından birinci mertebeden olan terimleri
+\begin{equation} \label{ym12}
+S \cong 1 - \frac{i q}{\hbar c}\boldsymbol{\tau}\cdot\boldsymbol{\lambda(x)},\qquad
+S^{-1} \cong 1 + \frac{i q}{\hbar c}\boldsymbol{\tau}\cdot\boldsymbol{\lambda(x)},\qquad
+\partial_{\mu}S \cong - \frac{i q}{\hbar c}\boldsymbol{\tau}\cdot\partial_{\mu}\boldsymbol{\lambda(x)}
+\end{equation}
+olarak alıp denklem \eqref{ym11}'de yerlerine yerleştirirsek
+\begin{equation} \label{ym13}
+\boldsymbol{\tau}\cdot\mathbf{A}^{'}_{\mu} \cong \boldsymbol{\tau}\cdot\mathbf{A}_{\mu} + \frac{iq}{\hbar c}\big[\boldsymbol{\tau}\cdot\mathbf{A}_{\mu} , \boldsymbol{\tau}\cdot\boldsymbol{\lambda(x)}\big] + \partial_{\mu}\boldsymbol{\lambda(x)}
+\end{equation}
+elde edilir. Komütatör ifadesi Pauli spin matrislerini içerdiğinden $\big[ \sigma_{i} ,  \sigma_{j} \big] = 2i\epsilon_{ijk}\sigma_{k}$ bağıntısını kullanarak   ($ \sigma_{i} ,  \sigma_{j}$ ve $\sigma_{k}$ Pauli spin matrisleridir) denklem \eqref{ym13}
+\begin{equation} \label{ym14}
+\mathbf{A}^{'}_{\mu} \cong \mathbf{A}_{\mu} + \partial_{\mu}\boldsymbol{\lambda(x)} + \frac{2q}{\hbar c}(\boldsymbol{\lambda} \times \mathbf{A}_{\mu})
+\end{equation}
+haline gelir. Şimdi yerel ayar dönüşümü için gerekli bütün araçlar elimizde olduğuna göre \eqref{ym6} denklemi
+\begin{equation} \label{ym15}
+\mathcal{L} = i\hbar c\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu} \psi - m\,c^{2}\,\overline{\psi}\,\psi
+\end{equation}
+olarak yazılır ve yerel ayar dönüşümü altında 
+\begin{equation} \label{ym16}
+\mathcal{L} = \big[ i\hbar c\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu} \psi - m\,c^{2}\,\overline{\psi}\,\psi \big] - (q\overline{\psi}\gamma^{\mu}\boldsymbol{\tau}\psi)\cdot\mathbf{A}_{\mu}
+\end{equation}
+ifadesi değişmezdir. Daha önce bahsedildiği üzere $\mathbf{A}_{\mu} = (A^{\mu}_{1},A^{\mu}_{2},A^{\mu}_{3})$  üç yeni vektör alanını kullandığımızdan bu alanlara ait serbest Lagranjiyen ifadeleri
+\begin{equation*}
+	\begin{aligned}
+\mathcal{L}_{A_{1}} = -\frac{1}{16\pi}\,F^{\mu\nu}_{1}\,F_{\mu\nu 1} + \frac{1}{8\pi}\left(\frac{m_{A_{1}}\,c}{\hbar}\right)^{2}A^{\nu}_{1}A_{\nu 1} \\
+\\
+\mathcal{L}_{A_{2}} = -\frac{1}{16\pi}\,F^{\mu\nu}_{2}\,F_{\mu\nu 2} + \frac{1}{8\pi}\left(\frac{m_{A_{2}}\,c}{\hbar}\right)^{2}A^{\nu}_{2}A_{\nu 2} \\
+\\
+\mathcal{L}_{A_{3}} = -\frac{1}{16\pi}\,F^{\mu\nu}_{3}\,F_{\mu\nu 3} + \frac{1}{8\pi}\left(\frac{m_{A_{3}}\,c}{\hbar}\right)^{2}A^{\nu}_{3}A_{\nu 3} \\
+\\
+	\end{aligned}
+\end{equation*}
+\begin{equation*}
+	\begin{aligned}
+\mathcal{L}_{A} = \mathcal{L}_{A_{1}} +\mathcal{L}_{A_{1}} + \mathcal{L}_{A_{1}} 	\\
+\\
+m_{A} = m_{A_{3}} = m_{A_{3}} = m_{A_{3}}\\
+\\
+	\end{aligned}
+\end{equation*}
+\begin{equation} \label{ym17}
+\mathcal{L}_{A} = -\frac{1}{16\pi}\,\mathbf{F}^{\mu\nu}\cdot \mathbf{F}_{\mu\nu}  + \frac{1}{8\pi}\left(\frac{m_{A}\,c}{\hbar}\right)^{2} \mathbf{A}^{\nu} \mathbf{A}_{\nu}
+\end{equation}	
+olarak yazılır. Burada kütle ifadeleri $\mathbf{A}^{\nu} \mathbf{A}_{\nu}$ terimi yerel ayar dönüşümü altında değişmez kalmadığından $m_{A} = 0 $ olmalıdır. Ancak $\mathbf{F}^{\mu\nu} \equiv (\partial^{\mu}\,\mathbf{A}^{\nu}\,  - \, \partial^{\nu}\,\mathbf{A}^{\mu} )$ terimi vektör alanını içerdiğinden $\mathbf{F}^{\mu\nu}\;\textrm{ve}\;\mathbf{F}_{\mu\nu}$ için yeni bir tanımlama yapmak gerekir. Bu ifade
+\begin{equation} \label{ym18}
+\mathbf{F}^{\mu\nu} \equiv \partial^{\mu}\,\mathbf{A}^{\nu}\,  - \, \partial^{\nu}\,\mathbf{A}^{\nu} -\frac{2q}{\hbar c}(\mathbf{A}^{\mu} \times \mathbf{A}^{\nu})
+\end{equation}
+şeklindedir. Yerel ayar dönüşümü altında 
+\begin{equation} \label{ym19}
+\mathbf{F}^{' \mu\nu} \to \partial^{\mu}\left[\mathbf{A}^{\nu} + \partial^{\nu}\boldsymbol{\lambda(x)} + \frac{2q}{\hbar c}(\boldsymbol{\lambda} \times \mathbf{A}^{\nu})\right] - \partial^{\nu} \left[ \mathbf{A}^{\mu} + \partial^{\mu}\boldsymbol{\lambda(x)} + \frac{2q}{\hbar c}(\boldsymbol{\lambda(x)} \times \mathbf{A}^{\mu})\right]
+\end{equation}
+olarak dönüştüğünden bu ifadenin sonsuz küçük yerel ayar dönüşümleri 
+\begin{equation} \label{ym20}
+\mathbf{F}^{' \mu\nu} \to \mathbf{F}^{\mu\nu} + \frac{2q}{\hbar c}(\boldsymbol{\lambda(x)} \times \mathbf{F}^{\mu\nu})
+\end{equation}
+olmaktadır. Bu son adımı da gerçekleştirdiğimize göre artık $\mathcal{L}_{A}$ değişmez kalmaktadır. Denklem \ref{ym6} ile başlangıç Lagranjiyenin yerel ayar dönüşümleri altında değişmez kalmasını sağlama çabamızın sonucu olarak  Yang-Mills'in tasvir ettiği Lagranjiyen 
+\begin{equation} \label{ym21}
+\mathcal{L} = \underbrace{ \big[ i\hbar c\overline{\psi}\gamma^{\mu}\partial_{\mu} \psi - m\,c^{2}\,\overline{\psi}\,\psi \big]}_{\textrm{Serbest spinör Lagranjiyeni}} -\underbrace{ \frac{1}{16\pi}\,\mathbf{F}^{\mu\nu}\cdot \mathbf{F}_{\mu\nu} }_{A_{\mu}\;\textrm{serbest Lagranjiyeni}}  - \underbrace{ (q\overline{\psi}\gamma^{\mu}\boldsymbol{\tau}\psi)\cdot\mathbf{A}_{\mu} }_{\textrm{Etkileşim terimi}}
+\end{equation}
+elde edilir.\par
+Yang-Mills kuramının başlangıç noktası olan proton ve nötron  nükleon sistemini açıklamaya $\frac{1}{2}$ spinli ve eşit kütleli iki parçacığı ele alarak başlamaktadır. Fakat denklem \ref{ym21}'de etkileşim terimine baktığımızda proton ile nötron arasındaki nükleer etkileşimi sağlayacak olan aracı 3 vektör parçacık burada kütlesiz olarak ortaya çıkmaktadır. Dolasıyla bunu sağlayabilecek en düşük mezon kütleli mezon üçlüsü  $\rho^{+1},\rho^{0}\; \textrm{ve}\;\rho^{-1}$ 775.5 MeV kütleye sahiptir. Bunun sonucu olarak bu sistem için Yang-Mills kuramı uygun değildir. Fakat bu sistem ileriki yıllarda güçlü etkileşmelerin teorisi olarak SU(3) renk simetrisini açıklamak için Yang-Mill kuramı kullanıldı. Higgs alanının Standart Model çerçevesinde temel parçacıklara ve bozonlara kütle kazandırılmasını sağlayan yapısında, Yang-Mills kuramının sonucu olarak ortaya çıkan üç $A_{\mu}$ alanına kütle kazandıracak bir sistem ileriki konularda görülecektir.
